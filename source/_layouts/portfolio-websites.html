@@ -1,0 +1,28 @@
+---
+layout: default
+active: websites
+---
+
+<p class="lead">
+	<i class="fa fa-desktop"></i>
+	These are my projects!<br />
+	<small>Check them out; click on one of them for a detailed view</small>
+</p>
+
+<hr />
+
+<div class="projects">
+    {% for project in page.projects %}
+	<div class="project col-md-4">
+		<a href="/portfolio/{{ project[0] }}">
+
+			{% if project[1].image %}
+			<img src="{{ project[1].image.url }}" title="{{ project[1].image.title }}" alt="{{ project[1].image.alt }}" />
+			{% endif %}
+
+			<p>{{ project[1].short }}</p>
+		</a>
+	</div>
+    {% endfor %}
+</div>
+
