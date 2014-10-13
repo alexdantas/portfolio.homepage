@@ -4,20 +4,20 @@
 
 	<body>
 
+		{% include navbar.html %}
+
 		<!-- Bootstrap thingy to set responsive width -->
 		<div class="container-fluid">
 			<div class="col-md-12">
-
-				{% include navbar.html %}
 
 				<article>
 					{{ content }}
 				</article>
 
-				{% include footer.html %}
-
 			</div>
 		</div>
+
+		{% include footer.html %}
 
 	</body>
 </html>

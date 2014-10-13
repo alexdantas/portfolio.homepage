@@ -10,17 +10,20 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">alexdantas Portfolio</a>
+			<a class="navbar-brand" href="#">
+				<i class="fa fa-laptop"></i>
+				alexdantas Portfolio
+			</a>
 		</div>
 
 		<!-- Rest of the navigation bar
-		- (it all toggles when you press that button above -->
+		   - (it all toggles when you press that button above -->
 		<div class="collapse navbar-collapse" id="navbar-collapse-1">
 			<ul class="nav navbar-nav">
 
 				<li {% if page.active == "highlights" %}class="active"{% endif %}>
 					<a href="index.html">
-						<i class="fa fa-certificate"></i>
+						<i class="fa fa-star"></i>
 						Highlights
 					</a>
 				</li>
@@ -32,7 +35,7 @@
 				</li>
 				<li {% if page.active == "about" %}class="active"{% endif %}>
 					<a href="about.html">
-						<i class="fa fa-frame"></i>
+						<i class="fa fa-photo"></i>
 						Graphical Arts
 					</a>
 				</li>
@@ -41,44 +44,15 @@
 			<!-- Far right part of the navbar -->
 			<ul class="nav navbar-nav navbar-right">
 
-				<!-- Theme selector -->
-				<li class="dropdown">
-
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<span class="glyphicon glyphicon-picture"></span>
-						Choose Theme
-						<b class="caret"></b>
+				<li {% if page.active == "about" %}class="active"{% endif %}>
+					<a href="http://alexdantas.net/">
+						<i class="fa fa-home"></i>
+						My Homepage
 					</a>
-
-					<ul class="dropdown-menu">
-
-						<!-- All the color themes available.
-						- Check out the file `js/themes.js` -->
-						<li><a href="#" id="bootstrap">Bootstrap</a></li>
-						<li class="divider"></li>
-						<li><a href="#" id="amelia">Amelia</a></li>
-						<li><a href="#" id="cerulean">Cerulean</a></li>
-						<li><a href="#" id="cosmo">Cosmo</a></li>
-						<li><a href="#" id="cyborg">Cyborg</a></li>
-						<li><a href="#" id="darkly">Darkly</a></li>
-						<li><a href="#" id="facebook-like">Facebook-like</a></li>
-						<li><a href="#" id="flatly">Flatly</a></li>
-						<li><a href="#" id="fonts">Fonts</a></li>
-						<li><a href="#" id="holo-like">Holo-like</a></li>
-						<li><a href="#" id="journal">Journal</a></li>
-						<li><a href="#" id="lumen">Lumen</a></li>
-						<li><a href="#" id="readable">Readable</a></li>
-						<li><a href="#" id="simplex">Simplex</a></li>
-						<li><a href="#" id="slate">Slate</a></li>
-						<li><a href="#" id="spacelab">Spacelab</a></li>
-						<li><a href="#" id="superhero">Superhero</a></li>
-						<li><a href="#" id="united">United</a></li>
-						<li><a href="#" id="yeti">Yeti</a></li>
-
-					</ul>
 				</li>
 			</ul>
 		</div>
+
 	</div>
 </nav>
 
