@@ -1,0 +1,12 @@
+# All languages from games on the "games.yml" file
+#
+# Every time the site gets built, it uses this list
+# to populate the menu on the "games" page.
+
+- "C++"
+- "Ruby"
+- "C"
+- "Java"
+- "Dogescript"
+- "JavaScript"
+

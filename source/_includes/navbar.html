@@ -1,0 +1,97 @@
+<!-- Top navigation bar -->
+<nav class="navbar navbar-inverse" role="navigation">
+	<div class="container-fluid">
+
+		<!-- That little button that collapses the menu, on mobile screens -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">(logo)</a>
+		</div>
+
+		<!-- Rest of the navigation bar
+		- (it all toggles when you press that button above -->
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			<ul class="nav navbar-nav">
+
+				<li {% if page.active == "home" %}class="active"{% endif %}>
+					<a href="index.html">
+						<i class="fa fa-home"></i>
+						Home
+					</a>
+				</li>
+				<li {% if page.active == "resume" %}class="active"{% endif %}>
+					<a href="resume.html">
+						<i class="fa fa-suitcase"></i>
+						Resume
+					</a>
+				</li>
+				<li {% if page.active == "about" %}class="active"{% endif %}>
+					<a href="about.html">
+						<i class="fa fa-user"></i>
+						About Me
+					</a>
+				</li>
+				<li {% if page.active == "games" %}class="active"{% endif %}>
+					<a href="games.html">
+						<i class="fa fa-gamepad"></i>
+						Games
+					</a>
+				</li>
+				<li {% if page.active == "contact" %}class="active"{% endif %}>
+					<a href="contact.html">
+						<i class="fa fa-phone"></i>
+						Contact
+					</a>
+				</li>
+
+			</ul>
+
+			<!-- Far right part of the navbar -->
+			<ul class="nav navbar-nav navbar-right">
+
+				<!-- Theme selector -->
+				<li class="dropdown">
+
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-picture"></span>
+						Choose Theme
+						<b class="caret"></b>
+					</a>
+
+					<ul class="dropdown-menu">
+
+						<!-- All the color themes available.
+						- Check out the file `js/themes.js` -->
+						<li><a href="#" id="bootstrap">Bootstrap</a></li>
+						<li class="divider"></li>
+						<li><a href="#" id="amelia">Amelia</a></li>
+						<li><a href="#" id="cerulean">Cerulean</a></li>
+						<li><a href="#" id="cosmo">Cosmo</a></li>
+						<li><a href="#" id="cyborg">Cyborg</a></li>
+						<li><a href="#" id="darkly">Darkly</a></li>
+						<li><a href="#" id="facebook-like">Facebook-like</a></li>
+						<li><a href="#" id="flatly">Flatly</a></li>
+						<li><a href="#" id="fonts">Fonts</a></li>
+						<li><a href="#" id="holo-like">Holo-like</a></li>
+						<li><a href="#" id="journal">Journal</a></li>
+						<li><a href="#" id="lumen">Lumen</a></li>
+						<li><a href="#" id="readable">Readable</a></li>
+						<li><a href="#" id="simplex">Simplex</a></li>
+						<li><a href="#" id="slate">Slate</a></li>
+						<li><a href="#" id="spacelab">Spacelab</a></li>
+						<li><a href="#" id="superhero">Superhero</a></li>
+						<li><a href="#" id="united">United</a></li>
+						<li><a href="#" id="yeti">Yeti</a></li>
+
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+

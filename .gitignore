@@ -1,0 +1,14 @@
+# Files ignored by Git!
+
+# Final output, site completely built.
+/output/
+
+# Local libraries installed by `npm`
+/node_modules/
+
+# Random files that sometimes appear
+*.log
+validation-report.json
+validation-status.json
+*.zip
+.sass-cache/

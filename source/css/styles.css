@@ -1,0 +1,67 @@
+/**
+ * Custom styles for the website.
+ * This file overrides Bootstrap.
+ */
+
+/* Don't like round border on Bootstrap's navbars */
+.navbar {
+	border-radius: 0;
+}
+
+/* Make that logo image expand to its full size! */
+img {
+	width:  100%;
+	height: 100%;
+
+	margin-bottom: 20px;
+}
+
+/* All left-hand table elements */
+table > tbody > tr > td:first-child {
+	font-weight: bold;
+	text-align: right;
+}
+
+/* Nice box-shadow on the main screenshot, disappears when hovered */
+.shadow {
+	-webkit-box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 10px 10px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 10px 10px 0px rgba(50, 50, 50, 0.75);
+}
+.shadow:hover {
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 0px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 0px 0px rgba(50, 50, 50, 0.75);
+}
+
+/* Bootstrap Flatly theme's footer is invisible otherwise */
+.my-footer {
+	color: white;
+	font-size: 75%;
+
+	margin: 0;
+}
+
+/* Merely aligning the text on the footer */
+footer .pull-right {
+	text-align: right;
+}
+footer .pull-left {
+	text-align: left;
+}
+
+/* These are styles specific to the "resume" page.
+ * Instead of a lot of <strong> and <em> tags, its better
+ * to use these <div> classes.
+ */
+.employment-date {
+	font-weight: bold;
+}
+.employment-place {
+
+}
+.employment-title {
+	font-style: italic;
+}
+
+

@@ -1,0 +1,119 @@
+# Huge list of my games
+#
+# Every time the site gets built, it uses this list
+# to populate the "games" page.
+
+- title:       "nsnake"
+  language:    "C++"
+  site:        "http://nsnake.alexdantas.net/"
+  popularity:  9
+  description: "Customizable Snake game on the terminal"
+
+- title:       "yetris"
+  language:    "C++"
+  site:        "http://yetris.alexdantas.net/"
+  popularity:  9
+  description: "Customizable Tetris game on the terminal"
+
+- title:       "quickpress"
+  language:    "Ruby"
+  site:        "http://quickpress.alexdantas.net/"
+  popularity:  4
+  description: "Manage your Wordpress site from the command line"
+
+- title:       "rndk"
+  language:    "Ruby"
+  site:        "http://alexdantas.net/projects/rndk/"
+  popularity:  3
+  description: "Ruby Ncurses Development Kit: GUI-like widgets for console applications"
+
+- title:       "tabscroll"
+  language:    "Ruby"
+  site:        "https://github.com/alexdantas/tabscroll/"
+  popularity:  3
+  description: "Easily scroll through your Guitar tabs on the terminal"
+
+- title:       "bsod"
+  language:    "Ruby"
+  site:        "http://alexdantas.net/projects/bsod/"
+  popularity:  3
+  description: "Blue Screen Of Death simulator"
+
+- title:       "terminus"
+  language:    "C++"
+  site:        "http://alexdantas.net/projects/terminus/"
+  popularity:  2
+  description: "Greek-themed 2D platform jumper"
+
+- title:       "nflood"
+  language:    "C"
+  site:        "http://alexdantas.net/projects/nflood/"
+  popularity:  5
+  description: "Flood-it clone for the terminal"
+
+- title:       "network-cat"
+  language:    "C++"
+  site:        "http://alexdantas.net/projects/network-cat"
+  popularity:  2
+  description: "Like `cat` but between computers on a network"
+
+- title:       "IDJ"
+  language:    "C++"
+  site:        "http://alexdantas.net/projects/idj"
+  popularity:  3
+  description: "Two-player fast-paced space dodger game"
+
+- title:       "19hz"
+  language:    "C++"
+  site:        "http://alexdantas.net/projects/19hz"
+  popularity:  2
+  description: "Top-down survival game made for the 2013 Global Game Jam"
+
+- title:       "acoc"
+  language:    "Ruby"
+  site:        "http://alexdantas.net/projects/acoc"
+  popularity:  7
+  description: "Regular expression based colour formatter for command-line programs"
+
+- title:       "doge-toe"
+  language:    "Dogescript"
+  site:        "https://github.com/alexdantas/doge-toe"
+  popularity:  5
+  description: "Doge tic-tac-toe made in Dogescript"
+
+- title:       "getw"
+  language:    "C"
+  site:        "https://github.com/alexdantas/getw"
+  popularity:  1
+  description: "Lightweight network downloader - `wget` clone"
+
+- title:       "servw"
+  language:    "C"
+  site:        "https://github.com/alexdantas/servw"
+  popularity:  1
+  description: "Lightweight HTTP web server"
+
+- title:       "kure Music Player"
+  language:    "Java"
+  site:        "http://alexdantas.net/projects/kmp"
+  popularity:  6
+  description: "Customizable music player for Android systems"
+
+- title:       "My Little ASM"
+  language:    "C++"
+  site:        "http://alexdantas.net/projects/my-little-asm"
+  popularity:  2
+  description: "Custom Assembly-like language - translator simulator and compiler to standard x86 asm"
+
+- title:       "Rabbit Hole"
+  language:    "JavaScript"
+  site:        "http://github.com/alexdantas/rabbit-hole"
+  popularity:  7
+  description: "HTML5 2D platformer that makes you explore caves"
+
+- title:       "WWW"
+  language:    "JavaScript"
+  site:        "http://github.com/alexdantas/www"
+  popularity:  8
+  description: "Low-resolution (32x32) clone of the VVVVV game"
+

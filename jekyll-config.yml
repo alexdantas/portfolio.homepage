@@ -1,0 +1,39 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Jekyll site configuration
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Authorship settings
+#
+# These values are placed on <meta> tags
+#
+# You can access those on every page like this:
+#
+#     {{ site.value_name }}
+#
+# It will simply repace it with the text you specify here
+
+title    : "alexdantas' Portfolio"
+tagline  : "Alexandre Dantas' portfolio, with his projects and websites"
+keywords : "alexdantas,alexandre,dantas,portfolio,projects,homepage"
+
+description: >-
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+author     : "Alexandre Dantas <eu@alexdantas.net>"
+repository : "https://github.com/alexdantas/portfolio.homepage/"
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Site Build options
+#
+# Used by Jekyll and Rake to generate the final website
+
+# Markdown interpreter (moved away from Maruku)
+markdown : kramdown
+kramdown:
+  # Enabling Github Flavored Markdown
+  input: GFM
+
+highlighter : pygments # code highlighter
+
