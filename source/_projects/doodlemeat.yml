@@ -1,0 +1,29 @@
+title:     "Anthon Fredriksson homepage"
+website:   "http://doodlemeat.net/"
+short:     "Homepage for my friend Anthon 'doodlemeat' Fredriksson."
+
+description: >-
+  This is a sample project description.
+
+project_description: >-
+  We did this project.
+
+endorsements:
+ - body: >-
+     Working with this company was great!
+   from: Endorser Name
+   role: Project Manager
+
+image:
+  url   : img/placeholder.gif
+  title : Placeholder
+  alt   : placeholder
+
+layout: project
+
+# Can be "website" and "art"
+type: "website"
+
+published: true
+featured: true
+
