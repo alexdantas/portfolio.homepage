@@ -1,29 +1,53 @@
+# This file describes a single project I did.
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Main stuff every project needs to have
 title   : "Dogescript homepage"
 website : "http://dogescript.com/"
+github  : "https://github.com/dogescript/dogescript.github.io/"
+date    : "June 2014"
 short   : "Homepage for the Dogescript programming language."
 
-description: >-
-  This is the homepage for the Dogescript programming language.
-
-project_description: >-
+# Describe your project using Markdown!
+description: |
   We did this project.
+  And it was **great**!
 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Optional
+technologies:
+  - Jekyll
+  - SLIM
+  - Ruby
+  - HTML
+  - CSS
+  - JavaScript
+  - jQuery
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Optional
 endorsements:
  - body: >-
      Working with this company was great!
    from: Endorser Name
    role: Project Manager
 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Optional
 image:
   url   : img/placeholder.gif
   title : Placeholder
   alt   : placeholder
 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Determines how to displkay this project
 layout: project
 
 # Can be "website" and "art"
 type: "website"
 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# What kind of project?
 published: true
 featured: true
 

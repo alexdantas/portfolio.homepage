@@ -14,25 +14,55 @@ layout: default
 
 <div class="row">
 	<div class="col-md-8 col-md-offset-2">
-		<h1>{{ page.title }}</h1>
-		<p>{{ page.description }}</p>
+		<h1>
+			{{ page.title }}
+			<small>{{ page.date }}</small>
+		</h1>
+		<p>
+			{{ page.short }}
+		</p>
 
 		{% if page.website %}
-		<div class="website"><a href="{{ page.website }}">{{ page.website }}</a></div>
+		<a href="{{ page.website }}">
+			<i class="fa fa-link fa-lg"></i>
+			{{ page.website }}
+		</a>
+		<br />
+		{% endif %}
+		{% if page.github %}
+		<a href="{{ page.github }}">
+			<i class="fa fa-github fa-lg"></i>
+			{{ page.github }}
+		</a>
 		{% endif %}
 	</div>
 </div>
 
 <div class="row">
-	<div id="project-description" class="col-md-10 col-md-offset-1">
-	<h3>What I did:</h3>
-	<p>{{ page.project_description }}</p>
+	<div class="col-md-10 col-md-offset-1">
+		<h3>What I did:</h3>
+		<p>
+			{{ page.description | markdownify }}
+		</p>
 	</div>
 </div>
 
+{% if page.technologies %}
+<div class="row">
+	<div class="col-md-10 col-md-offset-1">
+		<h3>Technologies used:</h3>
+		<ul>
+			{% for thing in page.technologies %}
+			<li>{{ thing }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+{% endif %}
+
 {% if page.endorsements %}
 <div class="row">
-	<div id="endorsements" class="col-md-10 col-md-offset-1">
+	<div class="col-md-10 col-md-offset-1">
 		<h3>What they had to say about us:</h3>
 
 		{% for endorsement in page.endorsements %}
