@@ -1,9 +1,9 @@
-title:     "Sample Project"
-website:   "http://sampleproject.com/"
-short:     "This is a sample short description."
+title   : "Dogescript homepage"
+website : "http://dogescript.com/"
+short   : "Homepage for the Dogescript programming language."
 
 description: >-
-  This is a sample project description.
+  This is the homepage for the Dogescript programming language.
 
 project_description: >-
   We did this project.

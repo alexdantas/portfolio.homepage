@@ -22,19 +22,19 @@
 			<ul class="nav navbar-nav">
 
 				<li {% if page.active == "highlights" %}class="active"{% endif %}>
-					<a href="index.html">
+					<a href="{{ page.relative }}index.html">
 						<i class="fa fa-star"></i>
 						Highlights
 					</a>
 				</li>
 				<li {% if page.active == "websites" %}class="active"{% endif %}>
-					<a href="websites.html">
+					<a href="{{ page.relative }}websites.html">
 						<i class="fa fa-code"></i>
 						Websites
 					</a>
 				</li>
 				<li {% if page.active == "arts" %}class="active"{% endif %}>
-					<a href="arts.html">
+					<a href="{{ page.relative }}arts.html">
 						<i class="fa fa-photo"></i>
 						Graphical Arts
 					</a>

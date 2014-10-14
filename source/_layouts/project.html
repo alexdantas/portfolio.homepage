@@ -3,35 +3,45 @@ layout: default
 ---
 
 {% if page.image %}
-<div class="span5 logo">
-    <img src="{{ page.image.url }}" title="{{ page.image.title }}" alt="{{ page.image.alt }}" />
+<div class="row">
+	<div class="col-md-12 logo">
+		<img src="{{ page.relative }}{{ page.image.url }}"
+			 title="{{ page.image.title }}"
+			 alt="{{ page.image.alt }}" />
+	</div>
 </div>
 {% endif %}
 
-<div class="span10">
-	<h1>{{ page.title }}</h1>
-	<p>{{ page.description }}</p>
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<h1>{{ page.title }}</h1>
+		<p>{{ page.description }}</p>
 
-	{% if page.website %}
-    <div class="website"><a href="{{ page.website }}">{{ page.website }}</a></div>
-	{% endif %}
+		{% if page.website %}
+		<div class="website"><a href="{{ page.website }}">{{ page.website }}</a></div>
+		{% endif %}
+	</div>
 </div>
 
-<div id="project-description" class="span16">
-	<h3>What we did for {{ page.title }}:</h3>
-	{{ page.project_description }}
+<div class="row">
+	<div id="project-description" class="col-md-10 col-md-offset-1">
+	<h3>What I did:</h3>
+	<p>{{ page.project_description }}</p>
+	</div>
 </div>
 
 {% if page.endorsements %}
-<div id="endorsements" class="span16">
-    <h3>What {{ page.title }} had to say about us:</h3>
+<div class="row">
+	<div id="endorsements" class="col-md-10 col-md-offset-1">
+		<h3>What they had to say about us:</h3>
 
-    {% for endorsement in page.endorsements %}
-    <blockquote>
-        {{ endorsement.body }}
-        <small>{{ endorsement.from }}, {{ endorsement.role }}</small>
-    </blockquote>
-    {% endfor %}
+		{% for endorsement in page.endorsements %}
+		<blockquote>
+			{{ endorsement.body }}
+			<small>{{ endorsement.from }}, {{ endorsement.role }}</small>
+		</blockquote>
+		{% endfor %}
+	</div>
 </div>
 {% endif %}
 

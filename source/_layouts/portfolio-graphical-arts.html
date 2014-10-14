@@ -14,7 +14,7 @@ active: arts
 <div class="projects">
     {% for project in page.projects %}
 	<div class="project col-md-4">
-		<a href="/portfolio/{{ project[0] }}">
+		<a href="{{ project[0] }}">
 
 			{% if project[1].image %}
 			<img src="{{ project[1].image.url }}" title="{{ project[1].image.title }}" alt="{{ project[1].image.alt }}" />

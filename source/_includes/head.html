@@ -14,17 +14,17 @@
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
 	<!-- All CSS files -->
-	<link rel="stylesheet" type="text/css" href="css/themes/yeti.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/lib/font-awesome.css" />
-	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="{{ page.relative }}css/themes/yeti.min.css" />
+	<link rel="stylesheet" type="text/css" href="{{ page.relative }}css/lib/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="{{ page.relative }}css/styles.css" />
 
 	<!-- All JavaScript files -->
-	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
-	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="{{ page.relative }}js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ page.relative }}js/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="{{ page.relative }}js/scripts.js"></script>
 
 	<!-- Test file to load themes dynamically -->
-	<script src="js/themes.js"></script>
+	<script src="{{ page.relative }}js/themes.js"></script>
 
 	<link rel="shortcut icon" href="favicon.gif" />
 </head>
