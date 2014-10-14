@@ -1,0 +1,57 @@
+# This file describes a single project I did.
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Main stuff every project needs to have
+title   : "Icarus Flight"
+website : "https://play.google.com/store/apps/details?id=com.gmail.jonibeatles.src"
+date    : "November 2013"
+short   : "Art and audio assets for the Android game 'Icarus Flight'."
+
+# Describe your project using Markdown!
+description: |
+   Overall design, art assets, music and sound effects for the Android game "Icarus Flight".
+
+   It was an extended job, across several months.
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Optional
+technologies:
+  - Adobe Photoshop
+  - Adobe Illustrator
+  - Fruity Loops Studio
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Optional
+images:
+  - url   : img/icarus-flight1.png
+    title : Main screen
+    alt   : Screenshot of the game - main screen
+
+  - url   : img/icarus-flight2.png
+    title : Instruction screen
+    alt   : Screenshot of the game - instruction screen
+
+  - url   : img/icarus-flight3.png
+    title : Gameplay
+    alt   : Screenshot of the game - gameplay
+
+  - url   : img/icarus-flight4.png
+    title : Game Over screen
+    alt   : Screenshot of the game - game over screen
+
+  - url   : img/icarus-flight5.png
+    title : Gameplay 2
+    alt   : Screenshot of the game - gameplay 2
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Determines how to displkay this project
+layout: project
+
+# Can be "website" and "art"
+type: "art"
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# What kind of project?
+published: true
+featured: true
+
