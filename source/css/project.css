@@ -1,0 +1,60 @@
+/** Styles specific to each individual "project" page.
+ *
+ */
+
+/* The Carousel (image gallery)
+ * Taken from Bootstrap Carousel Example:
+ * http://getbootstrap.com/examples/carousel/
+ */
+
+/* Carousel base class */
+.carousel {
+	height: 500px;
+	margin-bottom: 60px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+	z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+	height: 500px;
+	background-color: #777;
+}
+.carousel-inner > .item > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	height: 500px;
+}
+
+/* positioning the left and right arrows
+ * (they were originally set with glyphicons but I'm using
+ *  font-awesome, so I have to do by hand)
+ */
+.carousel-control .fa-chevron-circle-left,
+.carousel-control .fa-chevron-circle-right {
+	width: 30px;
+	height: 30px;
+	margin-top: -15px;
+	font-size: 30px;
+
+	position: absolute;
+	top: 50%;
+	z-index: 5;
+	display: inline-block;
+}
+
+.carousel-control .fa-chevron-circle-left {
+	margin-left: -15px;
+	left: 50%;
+}
+.carousel-control .fa-chevron-circle-left {
+	margin-right: -15px;
+	right: 50%;
+}
+
+

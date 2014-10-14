@@ -12,15 +12,23 @@ active: arts
 <hr />
 
 <div class="projects">
-    {% for project in page.projects %}
-	<div class="project col-md-4">
-		<a href="{{ project[0] }}">
+    {% for item in page.projects %}
+	{% assign directory = item[0] %}
+	{% assign project   = item[1] %}
 
-			{% if project[1].image %}
-			<img src="{{ project[1].image.url }}" title="{{ project[1].image.title }}" alt="{{ project[1].image.alt }}" />
+	<div class="project col-md-4">
+		<a href="{{ directory }}">
+
+			{% if project.images %}
+			<img src="{{ page.relative }}{{ project.images[0].url }}"
+			     title="{{ project.images[0].title }}"
+			     alt="{{ project.images[0].alt }}" />
 			{% endif %}
 
-			<p>{{ project[1].short }}</p>
+			<p>
+				{{ project.short }}
+			</p>
+
 		</a>
 	</div>
     {% endfor %}
