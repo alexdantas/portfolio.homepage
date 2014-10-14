@@ -20,9 +20,12 @@ active: arts
 		<a href="{{ directory }}">
 
 			{% if project.images %}
-			<img src="{{ page.relative }}{{ project.images[0].url }}"
-			     title="{{ project.images[0].title }}"
-			     alt="{{ project.images[0].alt }}" />
+			<div class="image-container">
+				<img class="img img-responsive"
+				     src="{{ page.relative }}{{ project.images[0].url }}"
+				     title="{{ project.images[0].title }}"
+				     alt="{{ project.images[0].alt }}" />
+			</div>
 			{% endif %}
 
 			<p>

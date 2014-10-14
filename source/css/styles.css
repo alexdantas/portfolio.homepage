@@ -51,20 +51,6 @@ footer .col-md-4 {
 	text-align: center;
 }
 
-/* These are styles specific to the "resume" page.
- * Instead of a lot of <strong> and <em> tags, its better
- * to use these <div> classes.
- */
-.employment-date {
-	font-weight: bold;
-}
-.employment-place {
-
-}
-.employment-title {
-	font-style: italic;
-}
-
 /* Styles for the project list
  */
 .projects {
@@ -93,16 +79,17 @@ footer .col-md-4 {
 	background-color:#E5E5E5
 }
 
-.project img {
-	display:block;
-	margin:0 auto;
-	max-width:240px
-none
-}
-
 .project p {
 	font:0.9em/1.5em Verdana,sans-serif;
 	margin-top:10px;
 	text-align:left
+}
+
+.project .image-container {
+	height : 180px;
+
+	/* Crop the image if it spans a height
+     * larger than the value above */
+	overflow: hidden;
 }
 
