@@ -1,0 +1,47 @@
+# This file describes a single project I did.
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Main stuff every project needs to have
+title   : "Quickpress homepage"
+website : "http://quickpress.alexdantas.net/"
+github  : "https://github.com/alexdantas/quickpress.homepage/"
+date    : "June 2014"
+short   : "Homepage for Quickpress, the command-line Wordpress manager."
+
+# Describe your project using Markdown!
+description: |
+  It was a quite simple website, made with SLIM and SASS (fancy languages that compile into raw HTML and CSS).
+  The objective was to make a single-page homepage that displayed some features for Quickpress, along with links to download it.
+
+  It took almost a whole afternoon, since it was one of my first trials with Twitter Bootstrap.
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Optional
+technologies:
+  - SLIM
+  - SASS
+  - Twitter Bootstrap
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Optional
+images:
+  - url   : img/quickpress-home1.png
+    title : Voila! The neat intro
+    alt   : Screenshot of the homepage
+
+  - url   : img/quickpress-home2.png
+    title : And scrolling down...
+    alt   : Screenshot of the homepage
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Determines how to displkay this project
+layout: project
+
+# Can be "website" and "art"
+type: "website"
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# What kind of project?
+published: true
+featured: true
+
