@@ -40,14 +40,15 @@ table > tbody > tr > td:first-child {
 	font-size: 75%;
 
 	margin: 0;
+	padding: 5px 0;
 }
 
 /* Merely aligning the text on the footer */
-footer .pull-right {
-	text-align: right;
+footer .col-md-8 {
+	text-align: center;
 }
-footer .pull-left {
-	text-align: left;
+footer .col-md-4 {
+	text-align: center;
 }
 
 /* These are styles specific to the "resume" page.
