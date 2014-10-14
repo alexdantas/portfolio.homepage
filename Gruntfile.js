@@ -65,23 +65,6 @@ module.exports = function(grunt) {
 			files: ['output/**/*.html']
 		},
 
-		// Zips all final files from the site
-		// and places it on the output directory
-		zip: {
-			dist: {
-				cwd: 'output/',
-
-				src: ['output/**/*'],
-				dest: 'output/doodlemeat.zip'
-			}
-		},
-
-		// Makes sure to remove the zip before
-		// zipping, so it won't contain itself
-		clean: {
-			zip: ['output/doodlemeat.zip']
-		},
-
 		// Pushes all built files on a remote server
 		rsync: {
 			options: {
@@ -91,7 +74,7 @@ module.exports = function(grunt) {
 				options: {
 					src: "output/",
 
-					dest: "~/public_html/tmp/",
+					dest: "~/public_html/portfolio/",
 					host: "alexd075@alexdantas.net",
 					port: 2222
 				}
@@ -103,6 +86,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['jekyll:build']);
 	grunt.registerTask('preview', ['jekyll:serve']);
 	grunt.registerTask('check',   ['jekyll:build', 'validation', 'bootlint']);
-	grunt.registerTask('upload',  ['jekyll:build', 'clean:zip', 'zip:dist', 'rsync:dist']);
+	grunt.registerTask('upload',  ['jekyll:build', 'rsync:dist']);
 };
 
