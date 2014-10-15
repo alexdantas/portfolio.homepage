@@ -35,41 +35,40 @@ layout: default
 	</a>
 	{% endif %}
 </div>
-
-<!--
-<div class="row">
-	<div class="col-md-12 logo">
-		<img src="{{ page.relative }}{{ page.image.url }}"
-			 title="{{ page.image.title }}"
-			 alt="{{ page.image.alt }}" />
-	</div>
-</div>
--->
 {% endif %}
 
 <div class="row">
-	<div class="col-md-8 col-md-offset-2">
-		<h1>
-			{{ page.title }}
-			<small>{{ page.date }}</small>
-		</h1>
-		<p>
-			{{ page.short }}
-		</p>
+	<div class="col-md-10 col-md-offset-1">
+
+		<div class="project-header">
+			<h1>
+				{{ page.title }}
+				<small>{{ page.date }}</small>
+			</h1>
+			<p>
+				{{ page.short }}
+			</p>
+		</div>
+
+		<br />
 
 		{% if page.website %}
 		<a href="{{ page.website }}">
 			<i class="fa fa-link fa-lg"></i>
 			{{ page.website }}
 		</a>
+
 		<br />
 		{% endif %}
+
 		{% if page.github %}
 		<a href="{{ page.github }}">
 			<i class="fa fa-github fa-lg"></i>
 			{{ page.github }}
 		</a>
 		{% endif %}
+
+		<hr />
 	</div>
 </div>
 
@@ -79,6 +78,8 @@ layout: default
 		<p>
 			{{ page.description | markdownify }}
 		</p>
+
+		<hr />
 	</div>
 </div>
 
@@ -91,6 +92,8 @@ layout: default
 			<li>{{ thing }}</li>
 			{% endfor %}
 		</ul>
+
+		<hr />
 	</div>
 </div>
 {% endif %}
@@ -106,6 +109,8 @@ layout: default
 			<small>{{ endorsement.from }}, {{ endorsement.role }}</small>
 		</blockquote>
 		{% endfor %}
+
+		<hr />
 	</div>
 </div>
 {% endif %}
